@@ -18,6 +18,7 @@ int main(void)
 		else
 		{
 			k += j;
+			j = k - j;
 			printf(", %ld", k);
 		}
 		++i;
