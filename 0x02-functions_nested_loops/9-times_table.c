@@ -11,12 +11,12 @@ void times_table(void)
 
 	int x, y, z, u, d;
 
-	for (x = 0 ; x <= 0 ; x++)
+	for (x = 0 ; x <= 9 ; x++)
 	{
-		for (y = 0 ; y <= 0 ; y++)
+		for (y = 0 ; y <= 9 ; y++)
 		{
 			z = x * y;
-			if (z > 0)
+			if (z > 9)
 			{
 				u = z % 10;
 				d = (z - u) / 10;
