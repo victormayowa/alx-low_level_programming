@@ -1,6 +1,6 @@
 /*
  * File: 0-print_list.c
- * Auth:Victor Mayowa
+ * Auth: Victor Mayowa
  */
 
 #include "lists.h"
