@@ -10,20 +10,12 @@
   * LE is vice-versa to BE.
   * Return: 0 if big endian and 1 if little endian
   */
-
 int get_endianness(void)
 {
-	/**
-	  * union - union with an int and array of char f the same size as the
-	  * int
-	  */
-	union
-	{
-		int i;
-		char c[sizeof(int)];
-	} test_endian;
+	unsigned int x = 0x76543210;
+	char *c;
 
-	test_endian.i = 1;
-
-	return ((test_endian.c[0] == 1));
+	c = (char *) &x;
+	return ((int) *c);
 }
+
