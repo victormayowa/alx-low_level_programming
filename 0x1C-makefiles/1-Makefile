@@ -1,0 +1,17 @@
+# Makefile for the 'school' executable
+# Usage: make -f 1-Makefile
+
+# Compiler settings
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Target: all (default rule)
+all: school
+
+# Compile 'school' executable
+school: $(SRC)
+	$(CC) $(SRC) -o $@
+
+.PHONY: all
