@@ -1,0 +1,19 @@
+# Makefile for the 'school' executable
+# Usage: make -f 0-Makefile
+
+# Compilation settings
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Target: all (default rule)
+all: school
+
+# Compile 'school' executable
+school: main.c school.c
+	$(CC) $(CFLAGS) $^ -o $@
+
+# Clean up generated files
+clean:
+	rm -f school
+
+.PHONY: all clean
