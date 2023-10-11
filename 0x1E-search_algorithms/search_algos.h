@@ -2,6 +2,9 @@
 #define SEARCH_ALGOS_H
 
 #include <stddef.h>  // For size_t
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - Singly linked list for use in jump list
