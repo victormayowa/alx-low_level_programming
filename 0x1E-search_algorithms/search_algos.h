@@ -1,7 +1,7 @@
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
 
-#include <stddef.h>  // For size_t
+#include <stddef.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -133,5 +133,6 @@ listint_t *jump_list(listint_t *list, size_t size, int value);
  * or NULL if value is not present or list is NULL
  */
 skiplist_t *linear_skip(skiplist_t *list, int value);
+
 
 #endif /* SEARCH_ALGOS_H */
